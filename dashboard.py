@@ -1,6 +1,6 @@
 !pip install matplotlib seaborn
 !pip install matplotlib 
-$streamlit run streamlit_
+$streamlit run dashboard.py
 
 import streamlit as st
 import pandas as pd

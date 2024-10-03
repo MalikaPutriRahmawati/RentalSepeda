@@ -1,1 +1,0 @@
-https://rentalsepeda-data.streamlit.app/

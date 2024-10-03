@@ -75,11 +75,7 @@ with fact_container:
         <div style='border-radius: 10px; padding: 15px; background: linear-gradient(135deg, #f54242, #e53935);
                     color: white; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); text-align: center;
                     transition: transform 0.2s ease;'>
-            <style>
-                div:hover {
-                    transform: scale(1.05);
-                }
-            </style>
+
         """
     with col1:
         st.markdown(f"{box_style}<strong>Total Penyewaan:</strong><br>{total_usage}</div>", unsafe_allow_html=True)
@@ -104,11 +100,6 @@ ax.set_ylabel("Total Penyewaan")
 ax.set_title("Total Penyewaan Sepeda per Bulan")
 st.pyplot(fig)
 
-st.write("""*Insight:*
-- Total penyewaan sepeda cenderung meningkat pada bulan juni-september tahun 2012.
-- Total penyewaan sepeda cenderung meningkat pada bulan april-juni tahun 2011.""")
-
-st.markdown("---")
 
 # Pertanyaan 2: Penggunaan Sepeda Berdasarkan Musim
 st.header('Penggunaan Sepeda Berdasarkan Musim')
@@ -123,11 +114,6 @@ for index, value in enumerate(season_df['total_penyewaan']):
     ax.text(index, value, str(round(value, 2)), ha='center', va='bottom')
 st.pyplot(fig)
 
-st.write("""*Insight:*
-- Musim panas adalah musim dengan penggunaan sepeda tertinggi.""")
-
-st.markdown("---")
-
 # Pertanyaan 3: Korelasi Suhu dan Penyewaan
 st.header('Korelasi antara Suhu dan Total Penyewaan')
 fig, ax = plt.subplots(figsize=(10, 5))
@@ -137,10 +123,6 @@ ax.set_ylabel("Total Penyewaan")
 ax.set_title("Korelasi Suhu dan Penyewaan Sepeda")
 st.pyplot(fig)
 
-st.write("""*Insight:*
-- Semakin tinggi suhu maka semakin tinggi jumlah penyewaan sepeda.""")
-
-st.markdown("---")
 
 # Kesimpulan
 st.header('Kesimpulan')
@@ -149,4 +131,3 @@ st.write("""
 2. Musim panas menunjukkan penggunaan tertinggi dibandingkan dengan musim lainnya.
 3. Suhu yang lebih tinggi cenderung berhubungan dengan jumlah penyewaan yang lebih banyak.
 """)
-

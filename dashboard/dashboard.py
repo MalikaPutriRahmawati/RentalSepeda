@@ -37,8 +37,6 @@ days_df = load_data()
 
 # Judul dashboard
 st.title('Dashboard Penyewaan Sepeda🚲')
-
-# Garis horizontal di bawah judul
 st.markdown("<hr style='height:2px; background-color:black;'>", unsafe_allow_html=True)
 
 # Sidebar untuk informasi data asli

@@ -127,7 +127,7 @@ st.pyplot(fig)
 # Kesimpulan
 st.header('Kesimpulan')
 st.write("""
-1. Total penyewaan sepeda bervariasi berdasarkan bulan dan musim.
+1. Total penyewaan sepeda cenderung meningkat pada bulan juni-september di tahun 2012 dan april-juni 2011.
 2. Musim panas menunjukkan penggunaan tertinggi dibandingkan dengan musim lainnya.
 3. Suhu yang lebih tinggi cenderung berhubungan dengan jumlah penyewaan yang lebih banyak.
 """)

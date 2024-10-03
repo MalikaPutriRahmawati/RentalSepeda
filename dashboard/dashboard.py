@@ -6,7 +6,7 @@ import seaborn as sns
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    days_df = pd.read_csv("day.csv")
+    days_df = pd.read_csv("dashboard/day.csv")
     days_df['dteday'] = pd.to_datetime(days_df['dteday'])
     days_df.rename(columns={
         'dteday': 'tanggal',
